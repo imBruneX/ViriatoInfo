@@ -4,6 +4,6 @@ import { TokenMiddleware } from "../middleware/token.middleware.js";
 
 const route = Router()
 
-route.post('/auth/login', Login)
+route.post('/login', Login)
 
 export default route;

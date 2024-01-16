@@ -12,6 +12,9 @@ import jwt from "jsonwebtoken";
 
 export const Login = async (req, res) => {
 
+    // const adminsenha = await bcrypt.hash("admin", 10)
+    // console.log(adminse)
+
     const { nome, senha } = req.body;
 
     if(!nome || !senha) {
