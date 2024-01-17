@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+ 
+
 
 :root {
   --blue: #007bff;
@@ -8266,4 +8268,50 @@ h1, h2, h3, h4, h5,
   font-family: 18px !important;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
+}
+
+
+.editar {
+  transition: all linear 500ms;
+ }
+
+ .editar:hover {
+   cursor: pointer;
+   opacity: 0.4;
+   text-decoration: underline;
+ }
+
+ #Pesquisar {
+  width: 230px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-left: 50px;
+  font-size: 14px;
+ }
+
+ #Pesquisar::placeholder {
+  text-align: center;
+  padding-right: 50px;
+  font-size: 15px;
+  opacity: 0.5;
+ }
+
+ #Pesquisar:focus {
+  border: 1px solid rgba(31,31,31,0.1);
+ }
+
+ .inputcontainer {
+    position: relative;
+ }
+
+ #testzada {
+  position: absolute;
+  padding-left: 15px;
+  padding-top: 2px;
+ }
+
+.Completo {
+  background-color: red;
 }

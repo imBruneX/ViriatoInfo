@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<link rel="stylesheet" href="/arquivos_dados/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	</head>
 	<body>
@@ -20,11 +21,20 @@
 					<h2 class="heading-section">Dados do Kit Informático</h2>
 				</div>
 			</div>
-			<div class="row justify-content-end">
-				<div style="margin-right: 15px;margin-bottom: 15px;">
+			<div class="flex row justify-content-between " style="margin-bottom: 15px;">
+				<div class="row justify-content-start" style="margin-left: 15px;">
+					<div class="inputcontainer">
+						<div id="testzada">
+							<i class="fa-solid fa-magnifying-glass fa-fade"></i>
+						</div>
+						<input type="text" id="Pesquisar" placeholder="Pesquisar" onkeyup="search()">
+					</div>
+				</div>
+				<div class="row justify-content-end" style="margin-right: 15px;">
 					<button onclick="criar()" class="brunobutton">Criar</button>
 				</div>
 			</div>
+	
 			<div class="row">
 				<div class="col-md-12">
 					<div class="table-wrap">
@@ -33,10 +43,11 @@
 						    <tr>
 						      <th>Identificador</th>
 						      <th>Nº serie</th>
+							  <th>Danos</th>
 						      <th>Roteador</th>
 						      <th>Estragos</th>
-						      <th>Responsável</th>
-						      <th>Equipamento</th>
+						      <th>Estado</th>
+							  <th>Editar</th>
 						    </tr>
 						  </thead>
 						  <tbody id="tablebuno">

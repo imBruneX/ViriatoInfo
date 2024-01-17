@@ -1,7 +1,7 @@
 import express from 'express';
 import 'dotenv/config';
 import route from './router/login.route.js';
-import dadosroute from './router/dados.route.js'
+import dadosroute from './router/infos.route.js'
 import cors from 'cors'
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
